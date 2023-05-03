@@ -1,4 +1,4 @@
-/*! Copyright Twitter Inc. and other contributors. Licensed under MIT */
+
 var twemoji = (function () {
   "use strict";
   var twemoji = {
