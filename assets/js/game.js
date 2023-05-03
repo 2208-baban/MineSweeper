@@ -1,14 +1,4 @@
-/*!
- * Minesweeper Game
- * https://github.com/mayankrajendrat/minesweeper
- *
- * Released under the MIT license
- * 
- * Date: 2019-08-09
- */
 
-
-/* global twemoji, alert, MouseEvent, game */
 const numbers = ['1️⃣', '2️⃣', '3️⃣', '4️⃣', '5️⃣', '6️⃣', '7️⃣', '8️⃣'];
 const feedback = document.querySelector('.feedback');
 
@@ -282,7 +272,7 @@ updateFeedback(text) {
 showMessage() {
   clearInterval(this.timer);
   var seconds = ((new Date() - this.startTime) / 1000).toFixed(2);
-  var winner = this.result === 'won';
+  var winner = this.result === 'Won!!!';
   var emoji = winner ? '😎' : '😵';
   this.updateFeedback(winner ? "Yay, you won!" : "Boom! you lost.");
   document.querySelector('.wrapper').classList.add(this.result);
